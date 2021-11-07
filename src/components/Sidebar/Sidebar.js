@@ -90,7 +90,7 @@ const Sidebar = (props) => {
       expand="md"
       id="sidenav-main"
     >
-      <Container fluid>
+      <Container className="h-auto">
         {/* Toggler */}
         <button
           className="navbar-toggler"
@@ -100,15 +100,15 @@ const Sidebar = (props) => {
           <span className="navbar-toggler-icon" />
         </button>
         {/* Brand */}
-        {logo ? (
-          <NavbarBrand className="pt-0" {...navbarBrandProps}>
+          <a href={"/"}>
             <img
-              alt={logo.imgAlt}
-              className="navbar-brand-img"
-              src={logo.imgSrc}
+                alt="/"
+                width={200}
+                src={
+                  require("../../assets/img/brand/logo-white.jpeg").default
+                }
             />
-          </NavbarBrand>
-        ) : null}
+          </a>
         <Collapse navbar isOpen={collapseOpen}>
           {/* Collapse header */}
           <div className="navbar-collapse-header d-md-none">

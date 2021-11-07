@@ -27,7 +27,7 @@ import {
 
 import Header from "components/Headers/Header.js";
 
-const AdminQ = (props) => {
+const Hokey114 = (props) => {
   const [activeNav, setActiveNav] = useState(1);
   const [chartExample1Data, setChartExample1Data] = useState("data1");
 
@@ -52,7 +52,7 @@ const AdminQ = (props) => {
                 <Row className="align-items-center">
                   <div className="col">
                     <h6 className="text-uppercase text-muted ls-1 mb-1">
-                      adminQ
+                      hokey114
                     </h6>
                     <h2 className="mb-0">행정사법인 호경</h2>
                   </div>
@@ -72,7 +72,7 @@ const AdminQ = (props) => {
                 <Row className="align-items-center">
                   <div className="col">
                     <h6 className="text-uppercase text-muted ls-1 mb-1">
-                      adminQ
+                      hokey114
                     </h6>
                     <h2 className="mb-0">행정사법인 호경 소속 행정사</h2>
                   </div>
@@ -92,7 +92,7 @@ const AdminQ = (props) => {
                 <Row className="align-items-center">
                   <div className="col">
                     <h6 className="text-uppercase text-muted ls-1 mb-1">
-                      adminQ
+                      hokey114
                     </h6>
                     <h2 className="mb-0">행정사법인 호경 연락</h2>
                   </div>
@@ -109,4 +109,4 @@ const AdminQ = (props) => {
   );
 };
 
-export default AdminQ;
+export default Hokey114;

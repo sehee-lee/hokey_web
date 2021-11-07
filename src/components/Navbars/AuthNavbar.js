@@ -16,15 +16,16 @@ const AdminNavbar = () => {
   return (
     <>
       <Navbar className="navbar-top navbar-horizontal navbar-dark" expand="md">
-        <Container className="px-4">
-          <NavbarBrand to="/" tag={Link}>
+        <Container className="h-auto">
+          <a href={"/"}>
             <img
-              alt="..."
+              alt="/"
+              width={200}
               src={
-                require("../../assets/img/brand/argon-react-white.png").default
+                require("../../assets/img/brand/logo-blue.jpeg").default
               }
             />
-          </NavbarBrand>
+          </a>
           <button className="navbar-toggler" id="navbar-collapse-main">
             <span className="navbar-toggler-icon" />
           </button>
@@ -36,7 +37,7 @@ const AdminNavbar = () => {
                     <img
                       alt="..."
                       src={
-                        require("../../assets/img/brand/argon-react.png")
+                        require("../../assets/img/brand/logo-blue.jpeg")
                           .default
                       }
                     />
@@ -60,11 +61,11 @@ const AdminNavbar = () => {
               <NavItem>
                 <NavLink
                   className="nav-link-icon"
-                  to="/adminq/info"
+                  to="/hokey114/info"
                   tag={Link}
                 >
                   <i className="ni ni-briefcase-24" />
-                  <span className="nav-link-inner--text">adminQ</span>
+                  <span className="nav-link-inner--text">hokey114</span>
                 </NavLink>
               </NavItem>
             </Nav>

@@ -1,5 +1,5 @@
 import Index from "views/Index.js";
-import AdminQ from "views/AdminQ.js";
+import Hokey114 from "views/Hokey114.js";
 import ContactUs from "views/ContactUs.js";
 
 var routes = [
@@ -12,10 +12,10 @@ var routes = [
   },
   {
     path: "/info",
-    name: "adminQ",
+    name: "hokey114",
     icon: "ni ni-briefcase-24 text-primary",
-    component: AdminQ,
-    layout: "/adminq",
+    component: Hokey114,
+    layout: "/hokey114",
   },
   {
     path: "/contact-us",

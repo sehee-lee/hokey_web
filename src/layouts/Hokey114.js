@@ -4,12 +4,12 @@ import { useLocation, Route, Switch, Redirect } from "react-router-dom";
 import { Container } from "reactstrap";
 // core components
 import AdminNavbar from "components/Navbars/AdminNavbar.js";
-import AdminQFooter from "components/Footers/AdminQFooter.js";
+import AdminQFooter from "components/Footers/Hokey114Footer.js";
 import Sidebar from "components/Sidebar/Sidebar.js";
 
 import routes from "routes.js";
 
-const AdminQ = (props) => {
+const Hokey114 = (props) => {
   const mainContent = React.useRef(null);
   const location = useLocation();
 
@@ -21,7 +21,7 @@ const AdminQ = (props) => {
 
   const getRoutes = (routes) => {
     return routes.map((prop, key) => {
-      if (prop.layout === "/adminq") {
+      if (prop.layout === "/hokey114") {
         return (
           <Route
             path={prop.layout + prop.path}
@@ -54,7 +54,7 @@ const AdminQ = (props) => {
         routes={routes}
         logo={{
           innerLink: "/admin/index",
-          imgSrc: require("../assets/img/brand/argon-react.png").default,
+          imgSrc: require("../assets/img/brand/logo-white.jpeg").default,
           imgAlt: "...",
         }}
       />
@@ -75,4 +75,4 @@ const AdminQ = (props) => {
   );
 };
 
-export default AdminQ;
+export default Hokey114;
